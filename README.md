@@ -27,7 +27,7 @@ Triangle points are generated using [delaunator](https://www.npmjs.com/package/d
 | fps                 |   number   | Frames per second limit.                                             |       60      |
 | backgroundcolor     |   string   | Background canvas color - fallback!                                  |   #00000000   |
 | fadecolor           |   string   | Fade color when resizing window.                                     |    #221A33    |
-| stretching          |   boolean  | Controls if the canvas streches during window resize                 |     false     |
+| stretching          |   boolean  | Does canvas strech during window resize?                             |     false     |
 
 ## Todo
 - make a non-intrusive control panel for customisation
