@@ -26,3 +26,6 @@ Triangle points are generated using [delaunator](https://www.npmjs.com/package/d
 | linecolor           |   string   | Color of a line connecting triangle points.                          |   #00000000   |
 | fps                 |   number   | Frames per second limit.                                             |       60      |
 | backgroundcolor     |   string   | Background canvas color - fallback!                                  |   #00000000   |
+
+## Todo
+- make a non-intrusive control panel for customisation
