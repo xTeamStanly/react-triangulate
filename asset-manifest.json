@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-triangulate/static/css/main.2ae47eeb.chunk.css",
-    "main.js": "/react-triangulate/static/js/main.93ff1181.chunk.js",
-    "main.js.map": "/react-triangulate/static/js/main.93ff1181.chunk.js.map",
+    "main.js": "/react-triangulate/static/js/main.b1e62498.chunk.js",
+    "main.js.map": "/react-triangulate/static/js/main.b1e62498.chunk.js.map",
     "runtime-main.js": "/react-triangulate/static/js/runtime-main.cc8a2240.js",
     "runtime-main.js.map": "/react-triangulate/static/js/runtime-main.cc8a2240.js.map",
     "static/js/2.50ddd0c1.chunk.js": "/react-triangulate/static/js/2.50ddd0c1.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.cc8a2240.js",
     "static/js/2.50ddd0c1.chunk.js",
     "static/css/main.2ae47eeb.chunk.css",
-    "static/js/main.93ff1181.chunk.js"
+    "static/js/main.b1e62498.chunk.js"
   ]
 }
