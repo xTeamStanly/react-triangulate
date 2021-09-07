@@ -15,14 +15,14 @@ ReactDOM.render(
     pointscolor = { "#000000" }
     mincirclesize = { 3 }
     maxcirclesize = { 8 }
-    count = { 10 }
+    count = { 100 }
     minspeed = { 0.1 }
     maxspeed = { 0.5 }
     pointshadowblur = { 0 }
     pointshadowcolor = { "#00000000" }
 
     //point color variation
-    colorvariance = { false }
+    colorvariance = { true }
     tint = { 0.5 }
     shade = { 0.7 }
 

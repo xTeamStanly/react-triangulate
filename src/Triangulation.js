@@ -51,7 +51,7 @@ const Triangulation = (props) => {
     const particleAmount = ((props.count) ? props.count : 100);
     const particleMinSpeed = (props.minspeed) ? props.minspeed : 0.1;
     const particleMaxSpeed = (props.maxspeed) ? props.maxspeed : 0.5;
-    const pointShadowBlur = (props.pointshadowblur) ? props.pointshadowblur : 3; //bilo je 5
+    const pointShadowBlur = (props.pointshadowblur) ? props.pointshadowblur : 3;
     const pointShadowColor = (props.pointshadowcolor) ? props.pointshadowcolor : "#000000";
 
     //global config
@@ -61,7 +61,7 @@ const Triangulation = (props) => {
     const lineColor = (props.linecolor) ? props.linecolor : "#00000000";
 
     //triangle config
-    const triangleShadowBlur = (props.triangleshadowblur) ? props.triangleshadowblur : 0; //stavi veliku vrednost tipa 50 za inner shadow effect
+    const triangleShadowBlur = (props.triangleshadowblur) ? props.triangleshadowblur : 0;
     const triangleShadowColor = (props.triangleshadowcolor) ? props.triangleshadowcolor : "#00000000";
 
     //list of particles
