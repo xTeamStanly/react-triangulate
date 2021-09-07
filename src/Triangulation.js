@@ -48,7 +48,7 @@ const Triangulation = (props) => {
     const shadeFactor = (props.shade) ? props.shade : 1;
 
     //particles config
-    const particleAmount = ((props.count) ? props.count : 100);
+    const particleAmount = (props.count) ? props.count : 100;
     const particleMinSpeed = (props.minspeed) ? props.minspeed : 0.1;
     const particleMaxSpeed = (props.maxspeed) ? props.maxspeed : 0.5;
     const pointShadowBlur = (props.pointshadowblur) ? props.pointshadowblur : 3;
