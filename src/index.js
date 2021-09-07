@@ -22,7 +22,7 @@ ReactDOM.render(
     pointshadowcolor = { "#00000000" }
 
     //point color variation
-    colorvariance = { true }
+    colorvariance = { false }
     tint = { 0.5 }
     shade = { 0.7 }
 
