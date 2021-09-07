@@ -30,12 +30,14 @@ ReactDOM.render(
     //triangle settings
     triangleshadowblur = { 0 }
     triangleshadowcolor = { "#00000000" }
-    linewidth = { 1.0 }
+    linewidth = { 0.5 }
     linecolor = { "#00000000" }
 
     //config
     fps = { 60 }
     backgroundcolor = { "#00000000" }
+    fadecolor = { "#221A33" }
+    stretching = { false }
   />,
 document.getElementById('root'));
 

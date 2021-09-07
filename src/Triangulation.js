@@ -72,15 +72,45 @@ const Triangulation = (props) => {
     let canvas = null;          //canvas element
     let ctx = null;             //canvas context
 
+    //fading and stretching
+    const stretching = (props.stretching) ? props.stretching : false;
+    const fadeColor = (props.fadecolor) ? props.fadecolor : "#221A33";
+    var renderFrame = true;
+    let opacity = 0;
+    let delta = 0.005; //fadespeed
+
+    const fadeIn = () => {
+        if(opacity < 1) {
+            ctx.globalAlpha = opacity;
+            opacity += delta;
+        }
+    }
+
+
+    const handleResize = () => {
+        canvasHeight = window.innerHeight;
+        canvasWidth = window.innerWidth;
+
+        renderFrame = true;
+        init(true);
+    }
+
     //executed only once - initialisation
     useEffect(() => {
         init(true); //first time init
+        var resizeTimer;
 
         //event - resize
         window.addEventListener('resize', () => {
-            canvasHeight = window.innerHeight;
-            canvasWidth = window.innerWidth;
-            init(false); //init is not first time
+            if(stretching) {
+                renderFrame = false;
+                if(resizeTimer) { clearTimeout(resizeTimer); }
+                resizeTimer = setTimeout(handleResize, 100);
+            } else {
+                canvasHeight = window.innerHeight;
+                canvasWidth = window.innerWidth;
+                init(false);
+            };
         });
 
         //cleanup
@@ -109,6 +139,9 @@ const Triangulation = (props) => {
     const init = (requestAnimationForFirstTime) => {
         canvas = canvasRef.current;
         ctx = canvas.getContext('2d');
+
+        opacity = 0;
+        ctx.globalAlpha = opacity;
         const particlesLocal = [];
 
         //particles on the edges
@@ -132,11 +165,15 @@ const Triangulation = (props) => {
             setTimeout(() => {
                 requestAnimationFrame(loop);
             }, 1000 / fps);
-        }
+        };
     }
+
+
 
     //loop function
     const loop = () => {
+        fadeIn();
+
         //TODO save and restore optimisation?
         ctx.save();
         ctx.fillStyle = backgroundColor;
@@ -230,16 +267,17 @@ const Triangulation = (props) => {
         };
         ctx.restore();
 
-        setTimeout(() => {
-            requestAnimationFrame(loop);
-        }, 1000 / fps);
+        if(renderFrame) {
+            setTimeout(() => {
+                requestAnimationFrame(loop);
+            }, 1000 / fps);
+        };
     };
 
     const generateColor = (ax, ay, bx, by, cx, cy) => {
         //triangle center coords
         //const triangleCenterX = (ax + bx + cx) / 3;
         const triangleCenterY = (ay + by + cy) / 3;
-
         const percentDistanceFromFloor = triangleCenterY / canvasHeight;
 
         //hue saturation lightness
@@ -262,7 +300,13 @@ const Triangulation = (props) => {
     };
 
     return(
-        <div>
+        <div style = {{
+            backgroundColor: `${fadeColor}`,
+            position: 'absolute',
+            zIndex: -1,
+            width: "100%",
+            height: "100%"
+        }}>
             <canvas
                 ref = { canvasRef }
                 style = {{
