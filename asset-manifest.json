@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-triangulate/static/css/main.2ae47eeb.chunk.css",
+    "main.js": "/react-triangulate/static/js/main.423c628d.chunk.js",
+    "main.js.map": "/react-triangulate/static/js/main.423c628d.chunk.js.map",
+    "runtime-main.js": "/react-triangulate/static/js/runtime-main.cc8a2240.js",
+    "runtime-main.js.map": "/react-triangulate/static/js/runtime-main.cc8a2240.js.map",
+    "static/js/2.50ddd0c1.chunk.js": "/react-triangulate/static/js/2.50ddd0c1.chunk.js",
+    "static/js/2.50ddd0c1.chunk.js.map": "/react-triangulate/static/js/2.50ddd0c1.chunk.js.map",
+    "static/js/3.aca03077.chunk.js": "/react-triangulate/static/js/3.aca03077.chunk.js",
+    "static/js/3.aca03077.chunk.js.map": "/react-triangulate/static/js/3.aca03077.chunk.js.map",
+    "index.html": "/react-triangulate/index.html",
+    "service-worker.js": "/react-triangulate/service-worker.js",
+    "service-worker.js.map": "/react-triangulate/service-worker.js.map",
+    "static/css/main.2ae47eeb.chunk.css.map": "/react-triangulate/static/css/main.2ae47eeb.chunk.css.map",
+    "static/js/2.50ddd0c1.chunk.js.LICENSE.txt": "/react-triangulate/static/js/2.50ddd0c1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cc8a2240.js",
+    "static/js/2.50ddd0c1.chunk.js",
+    "static/css/main.2ae47eeb.chunk.css",
+    "static/js/main.423c628d.chunk.js"
+  ]
+}
