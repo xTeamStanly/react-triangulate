@@ -1,6 +1,7 @@
 # react-triangulate
 Simple Delauney triangulation example with animation.
 Triangle points are generated using [delaunator](https://www.npmjs.com/package/delaunator).
+[Demo](https://xteamstanly.github.io/react-triangulate/)
 
 ## Preview
 ![preview](preview.png)
