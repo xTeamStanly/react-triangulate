@@ -32,4 +32,4 @@ Triangle points are generated using [delaunator](https://www.npmjs.com/package/d
 | stretching          |   boolean  | Does the canvas stretch during window resize?                        |     false     |
 
 ## Todo
-- make a non-intrusive control panel for customisation
+- make a non-intrusive control panel for customisation ([resource](https://github.com/dataarts/dat.gui))
