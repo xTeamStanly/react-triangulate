@@ -77,7 +77,7 @@ const Triangulation = (props) => {
     const fadeColor = (props.fadecolor) ? props.fadecolor : "#221A33";
     var renderFrame = true;
     let opacity = 0;
-    let delta = 0.005; //fadespeed
+    let delta = 0.05; //fadespeed
 
     const fadeIn = () => {
         if(opacity < 1) {
